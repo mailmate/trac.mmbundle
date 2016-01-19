@@ -1,0 +1,9 @@
+{
+	name          = 'Open in Browser';
+	input         = 'canonical';
+	keyEquivalent = "^o";
+	environment   = "MM_TRAC_URL=${x-trac-ticket-url}\n";
+	conditions    = "x-trac-ticket-url exists";
+	uuid          = 'B785E59F-CD58-4987-B8B2-A2DA5AC424FD';
+	command       = '#!/bin/bash\nopen "${MM_TRAC_URL}"\n';
+}
